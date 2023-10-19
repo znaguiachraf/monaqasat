@@ -1,0 +1,9 @@
+/*CssSyntaxError: <css input>:314:2: Unclosed block
+
+  312 | 	}
+  313 | 
+> 314 | 	textarea {
+      | 	^
+  315 | 		-webkit-transition: 0;
+  316 | 		-moz-transition: 0;
+*/
