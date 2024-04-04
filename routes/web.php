@@ -14,17 +14,21 @@ use App\Http\Controllers\TemplateController;
 |
 */
 
-Route::get('/', function () {
-    // return view('welcome');
-    return view('FrontEnd.home');
-});
+ Route::get('/', function () {
+     // return view('welcome');
+     return view('FrontEnd.home');
+ });
+// Route::get('/', 'TemplateController@index')->name('FrontEnd.home');
+
+
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 
-Route::get('/home',[TemplateController::class,'index']);
+ Route::get('/home',[TemplateController::class,'index'])->name('home');
 
 
 Route::middleware('auth')->group(function () {
@@ -47,3 +51,18 @@ require __DIR__.'/auth.php';
  Route::get('/createmonaqasa', function () {
     return view('FrontEnd.createdash');
 });
+
+Route::get('/profil',function(){
+    return view('FrontEnd.profil');
+});
+
+
+
+
+
+
+
+
+
+
+

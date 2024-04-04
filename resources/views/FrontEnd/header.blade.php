@@ -1,17 +1,19 @@
+
+
 <header class="sticky-header">
     <div class="container">
         <div class="sixteen columns">
 
             <!-- Logo -->
             <div id="logo">
-                <h1><a href="index.html"><img src="images/logo.png" alt="Work Scout" /></a></h1>
+                <h1><a href="{{ route('home') }}"><img src="images/logo.png" alt="Work Scout" /></a></h1>
             </div>
 
             <!-- Menu -->
             <nav id="navigation" class="menu">
                 <ul id="responsive">
 
-                    <li><a id="current" href="index.html">الرئسية</a>
+                    <li><a id="current" href="{{ route('home') }}">الرئسية</a>
 
                     </li>
 
@@ -32,7 +34,7 @@
                     </li>
                     </li>
                     <li>
-                        <a href="#">تواصل معنا</a>
+                        <a href="#target4">تواصل معنا</a>
                     </li>
                 </ul>
 
@@ -43,7 +45,7 @@
                     @if (Route::has('login'))
                         @auth
                             <li><a href="#"><i class="fa fa-user"></i> الملف الشخصي</a></li>
-                            <li><a href="{{ url('/dashboard') }}"><i class="fa fa-dashboard"></i> لوحة التحكم</a></li>
+                            <li><a href="{{ url('/page1') }}"><i class="fa fa-dashboard"></i> لوحة التحكم</a></li>
                         @else
                             <li><a href="{{ route('login') }}"><i class="fa fa-user"></i> تسجيل</a></li>
                             @if (Route::has('register'))

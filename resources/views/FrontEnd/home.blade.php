@@ -76,9 +76,9 @@
 	<!-- tabs  عن عطءات
 ================================================== -->
 <!-- Info Banner -->
-<div class="section-background top-0" > 
+<div class="section-background top-0" >
 <div class="container">
-	<div class="sixteen columns" >
+	<div class="sixteen columns" id="section1">
 
 		<div class="info-banner">
 			<div class="info-content" >
@@ -91,8 +91,8 @@
 		</div>
 
 	</div>
-	
-</div>	
+
+</div>
 </div>
 
 <!-- Icon Boxes -->
@@ -165,7 +165,7 @@
 </div>
 
 
-	
+
 </div>
 <!-- Slider
 ================================================== -->
@@ -198,7 +198,7 @@
 			</li>
 		</ul>
 	</div>
-</div>	
+</div>
 
 <section class="fullwidth-testimonial margin-top-15">
 
@@ -216,7 +216,7 @@
 	<!-- Testimonials Carousel -->
 	<div class="fullwidth-carousel-container margin-top-20">
 		<div class="testimonial-carousel testimonials">
-			
+
 			<!-- Item -->
 			<div class="fw-carousel-review">
 				<div class="testimonial-box">
@@ -261,7 +261,7 @@
 
 <!-- Footer
 ================================================== -->
-<div class="margin-top-55"></div>
+<div class="margin-top-55" id="target4"></div>
 
  @include('FrontEnd.footer')
 
@@ -290,7 +290,6 @@
 <script src="scripts/stacktable.js"></script>
 <script src="scripts/slick.min.js"></script>
 <script src="scripts/headroom.min.js"></script>
-
 
 
 
